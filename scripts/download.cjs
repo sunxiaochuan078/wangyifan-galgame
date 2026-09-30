@@ -16,6 +16,16 @@ async function verify(file) {
   return size === SIZE && hash.digest('hex') === HASH;
 }
 async function main() {
+  // npm prepares Git dependencies in its cache before installing them.
+  // Download only in the final install, not in that temporary packaging step.
+  const installCwd = path.resolve(process.env.INIT_CWD || process.cwd());
+  const packageRoot = path.resolve(__dirname, '..');
+  const gitCachePattern = /[/\\]_cacache[/\\]tmp[/\\]git-clone[^/\\]+$/;
+  if (process.env.npm_lifecycle_event === 'postinstall' &&
+      installCwd === packageRoot && gitCachePattern.test(packageRoot)) {
+    console.log('GitHub 临时打包完成，安装后将下载 APK。');
+    return;
+  }
   const target = path.resolve(process.env.INIT_CWD || process.cwd(), NAME);
   if (fs.existsSync(target)) {
     if (!await verify(target)) throw new Error('同名文件已存在且校验不匹配，请移走该文件后重试：' + target);
