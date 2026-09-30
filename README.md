@@ -24,6 +24,6 @@ npm --prefix node_modules/wangyifan-galgame run download
 
 `--ignore-scripts` 会跳过自动下载。再次运行安装命令可能显示 already up to date，此时用 `run download` 重新下载。下载失败后可以重试；不同内容的同名 APK 需要先手动移走。
 
-本项目未发布到 npm registry。`npm install` 使用的是 GitHub 仓库，不需要密码、令牌或 SSH 密钥。
+`npm install` 使用的是 GitHub 仓库，不需要密码、令牌或 SSH 密钥。
 
 SHA-256：`4e0ae8ea7a321e24d70244792cd76c07bb41554de88b14a0d42e7b16d3d10683`
