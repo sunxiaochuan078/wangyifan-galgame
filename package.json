@@ -1,11 +1,22 @@
 {
-  "name": "shude67-apk-download",
-  "version": "2.2.0",
-  "description": "Download the 67days Android APK from GitHub Releases",
-  "repository": {"type": "git", "url": "https://github.com/sunxiaochuan078/shude67.git"},
-  "engines": {"node": ">=18"},
-  "files": ["scripts"],
-  "scripts": {"postinstall": "node scripts/download.cjs"},
-  "bin": {"shude67-download": "scripts/download.cjs"},
+  "name": "wangyifan-galgame",
+  "version": "2.2.1",
+  "description": "王逸凡galgame · 67days 安卓安装包下载",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunxiaochuan078/wangyifan-galgame.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "scripts"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/download.cjs"
+  },
+  "bin": {
+    "wangyifan-galgame-download": "scripts/download.cjs"
+  },
   "license": "UNLICENSED"
 }

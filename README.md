@@ -1,9 +1,9 @@
-# 67days APK 下载
+# 王逸凡galgame
 
 需要 Node.js 18+、npm 和 Git。无需 npm 账号。
 
 ```bash
-npm install sunxiaochuan078/shude67
+npm install sunxiaochuan078/wangyifan-galgame
 ```
 
 安装脚本从本仓库 GitHub Release 下载约 125 MB 的 `67days-2.2.0-release.apk` 到运行命令的目录，并校验文件大小和 SHA-256。不会自动安装或运行 APK，不覆盖不同内容的同名文件。未发布至 npm registry。
@@ -11,7 +11,7 @@ npm install sunxiaochuan078/shude67
 如 npm 禁用了安装脚本，或者需要再次下载：
 
 ```bash
-npx --package=github:sunxiaochuan078/shude67 shude67-download
+npx --package=github:sunxiaochuan078/wangyifan-galgame wangyifan-galgame-download
 ```
 
 此命令也可以独立使用。运行时保持安装脚本启用；启用了脚本审批的 npm 版本需要批准本包的脚本。

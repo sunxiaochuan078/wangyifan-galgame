@@ -8,7 +8,7 @@ const { pipeline } = require('node:stream/promises');
 const NAME = '67days-2.2.0-release.apk';
 const SIZE = 124693068;
 const HASH = '4e0ae8ea7a321e24d70244792cd76c07bb41554de88b14a0d42e7b16d3d10683';
-const URL = 'https://github.com/sunxiaochuan078/shude67/releases/download/v2.2.0/' + NAME;
+const URL = 'https://github.com/sunxiaochuan078/wangyifan-galgame/releases/download/v2.2.0/' + NAME;
 async function verify(file) {
   const hash = crypto.createHash('sha256');
   let size = 0;
