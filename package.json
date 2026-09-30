@@ -1,0 +1,11 @@
+{
+  "name": "shude67-apk-download",
+  "version": "2.2.0",
+  "description": "Download the 67days Android APK from GitHub Releases",
+  "repository": {"type": "git", "url": "https://github.com/sunxiaochuan078/shude67.git"},
+  "engines": {"node": ">=18"},
+  "files": ["scripts"],
+  "scripts": {"postinstall": "node scripts/download.cjs"},
+  "bin": {"shude67-download": "scripts/download.cjs"},
+  "license": "UNLICENSED"
+}
