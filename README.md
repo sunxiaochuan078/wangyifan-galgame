@@ -1,9 +1,9 @@
 # 王逸凡galgame
 
-通过 GitHub 下载 `67days-2.2.0-release.apk`，无需 npm 账号。需要 Node.js 18+、npm 和 Git。
+通过 GitHub 下载 `WangYifanGalgame-2.3.4-release.apk`，无需 npm 账号。需要 Node.js 18+、npm 和 Git。
 
 ```bash
-npm install sunxiaochuan078/wangyifan-galgame --foreground-scripts
+npm install sunxiaochuan078/wangyifan-galgame
 ```
 
 APK 下载到执行命令的文件夹（约 125 MB），校验大小和 SHA-256。不会自动安装或运行 APK，不覆盖不同内容的同名文件。下载器不使用第三方依赖，不创建命令快捷链接，兼容 Android 共享存储目录。
@@ -26,4 +26,4 @@ npm --prefix node_modules/wangyifan-galgame run download
 
 `npm install` 使用的是 GitHub 仓库，不需要密码、令牌或 SSH 密钥。
 
-SHA-256：`4e0ae8ea7a321e24d70244792cd76c07bb41554de88b14a0d42e7b16d3d10683`
+SHA-256：`ff7de88dc8708a9e041e3b44581abe1231f3a4ef9b749edcf15ac55f314098f3`
