@@ -1,6 +1,6 @@
 # 王逸凡galgame
 
-通过 GitHub 下载 `WangYifanGalgame-2.3.4-release.apk`，无需 npm 账号。需要 Node.js 18+、npm 和 Git。
+通过 GitHub 下载 `WangYifanGalgame-2.4.0-release.apk`，无需 npm 账号。需要 Node.js 18+、npm 和 Git。
 
 ```bash
 npm install sunxiaochuan078/wangyifan-galgame
@@ -26,4 +26,4 @@ npm --prefix node_modules/wangyifan-galgame run download
 
 `npm install` 使用的是 GitHub 仓库，不需要密码、令牌或 SSH 密钥。
 
-SHA-256：`ff7de88dc8708a9e041e3b44581abe1231f3a4ef9b749edcf15ac55f314098f3`
+SHA-256：`38a5633bdc622cc8a397202b72786f4d15c4133113c5de5bbfb870fd2163e8ae`

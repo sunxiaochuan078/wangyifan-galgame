@@ -5,10 +5,10 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const { Readable, Transform } = require('node:stream');
 const { pipeline } = require('node:stream/promises');
-const NAME = 'WangYifanGalgame-2.3.4-release.apk';
-const SIZE = 124889598;
-const HASH = 'ff7de88dc8708a9e041e3b44581abe1231f3a4ef9b749edcf15ac55f314098f3';
-const URL = 'https://github.com/sunxiaochuan078/wangyifan-galgame/releases/download/v2.3.4/' + NAME;
+const NAME = 'WangYifanGalgame-2.4.0-release.apk';
+const SIZE = 122365502;
+const HASH = '38a5633bdc622cc8a397202b72786f4d15c4133113c5de5bbfb870fd2163e8ae';
+const URL = 'https://github.com/sunxiaochuan078/wangyifan-galgame/releases/download/v2.4.0/' + NAME;
 async function verify(file) {
   const hash = crypto.createHash('sha256');
   let size = 0;
@@ -34,7 +34,7 @@ async function main() {
   }
   const temp = target + '.' + crypto.randomBytes(8).toString('hex') + '.part';
   try {
-    console.log('正在从 GitHub 下载 王逸凡galgame 2.3.4（约 125 MB）…');
+    console.log('正在从 GitHub 下载 王逸凡galgame 2.4.0（约 125 MB）…');
     let url = URL, response;
     for (let redirects = 0; redirects <= 5; redirects++) {
       const parsed = new globalThis.URL(url);
